@@ -1,0 +1,397 @@
+$color1:#283779;
+$color2: #ffffff;
+$color3:#b2dded;
+
+
+
+
+.onecard{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    
+
+    & .card-d{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        border: 1px solid #283779;
+        border-radius: 10px;
+
+        & .table{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            & h3{
+                width: 300px;
+                font-weight: 300;
+
+            }
+            & h4{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (min-width: 420px){
+    .mother_main{
+
+        & .mother-cards{
+            display: flex;
+            flex-direction: column;
+
+            &  .container{
+                width: 60%;
+                margin: 0 auto;
+
+                & .about_cards{
+                    display: none;
+                }
+                & .for_phone{
+                    margin: 100px 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    & select{
+                        font-size: 16px;
+                        color: #283779;
+                        border: 1px solid #b2dded;
+                        padding: 3px;
+                        border-radius: 5px;
+
+                        & option{
+                            color: #283779;
+                            font-size: 10px;
+                        }
+                    }
+
+                    & select:focus{
+                        overflow:none;
+                        border: 1px solid #283779;
+                    }
+                }
+            }
+
+            & .main-card{
+
+                & .param{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & .mother_patient{
+                    width: 100%;
+                    margin: 40px 0;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    gap: 20px;
+
+                    & a{
+                        text-decoration: none;
+                    }
+                    
+                    & .cards{
+                        display: flex;  
+                        justify-content: space-between;
+                        align-items: center;
+                        box-shadow: -1px 1px 5px 0px $color3;
+                        padding: 30px; 
+                        border-radius: 6px;
+                        text-decoration: none;
+
+                        & .table{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0;
+                            gap: 7px;
+
+                            & p{
+                                color: #283779;
+                                margin: 0;
+                                font-size: 16px;
+                            }
+
+                            & a{
+                                color: #b2dded;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media (min-width: 767px){
+    .mother_main{
+
+        & .mother-cards{
+            display: flex;
+            flex-direction: column;
+
+            &  .container{
+                width: 60%;
+                margin: 0 auto;
+
+                & .about_cards{
+                    display: none;
+                }
+            }
+
+            & .main-card{
+
+                & .param{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & .mother_patient{
+                    width: 100%;
+                    margin: 40px 0;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    gap: 20px;
+                    
+                    & .cards{
+                        display: flex;  
+                        justify-content: space-between;
+                        align-items: center;
+                        box-shadow: -1px 1px 5px 0px $color3;
+                        padding: 30px; 
+                        border-radius: 6px;
+                        text-decoration: none;
+
+                        & .table{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0;
+                            gap: 7px;
+
+                            & p{
+                                color: #283779;
+                                margin: 0;
+                                font-size: 18px;
+                            }
+
+                            & a{
+                                color: #b2dded;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .mother_main{
+
+        & .mother-cards{
+            display: flex;
+            flex-direction: column;
+
+            &  .container{
+                width: 60%;
+                margin: 0 auto;
+
+                & .for_phone{
+                   display: none;
+                }
+
+                & .about_cards{
+                    display: block;
+                    margin: 150px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 50px;
+
+                    & .about{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding: 40px;
+                        box-shadow: -1px 1px 5px 0px $color3;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        align-items: center;
+
+                        & h3{
+                            margin: 0;
+                            font-size: 18px;
+                            color: #283779;
+
+                        }
+                        & p{
+                            font-size: 18px;
+                            color: #283779;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            & .main-card{
+
+                & .param{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & .mother_patient{
+                    width: 100%;
+                    margin: 40px 0;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 20px;
+                    
+                    & .cards{
+                        display: flex;  
+                        justify-content: space-between;
+                        align-items: center;
+                        box-shadow: -1px 1px 5px 0px $color3;
+                        padding: 30px; 
+                        border-radius: 6px;
+                        text-decoration: none;
+
+                        & .table{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0;
+                            gap: 7px;
+
+                            & p{
+                                color: #283779;
+                                text-decoration: none;
+                                margin: 0;
+                                font-size: 18px;
+                            }
+
+                            & a{
+                                color: #b2dded;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media (min-width: 1440px){
+    .mother_main{
+
+        & .mother-cards{
+            display: flex;
+            flex-direction: column;
+
+            &  .container{
+                width: 60%;
+                margin: 0 auto;
+
+                & .for_phone{
+                   display: none;
+                }
+
+                & .about_cards{
+                    display: block;
+                    margin: 150px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 50px;
+
+                    & .about{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding: 40px;
+                        box-shadow: -1px 1px 5px 0px $color3;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        align-items: center;
+
+                        & h3{
+                            margin: 0;
+                            font-size: 20px;
+                            color: #283779;
+
+                        }
+                        & p{
+                            font-size: 20px;
+                            color: #283779;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            & .main-card{
+
+                & .param{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & .mother_patient{
+                    width: 100%;
+                    margin: 40px 0;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 20px;
+                    
+                    & .cards{
+                        display: flex;  
+                        justify-content: space-between;
+                        align-items: center;
+                        box-shadow: -1px 1px 5px 0px $color3;
+                        padding: 30px; 
+                        border-radius: 6px;
+                        text-decoration: none;
+
+                        & .table{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0;
+                            gap: 7px;
+
+                            & p{
+                                color: #283779;
+                                margin: 0;
+                                font-size: 18px;
+                            }
+
+                            & a{
+                                color: #b2dded;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
